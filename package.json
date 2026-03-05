@@ -1,0 +1,8 @@
+{
+  "name": "visual-adapter",
+  "version": "1.0.0",
+  "description": "AI-powered Social Media Visual Adapter",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0"
+  }
+}
