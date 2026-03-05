@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "adapt.js", "use": "@vercel/node" },
-    { "src": "index.html", "use": "@vercel/static" }
-  ],
+  "functions": {
+    "adapt.js": {
+      "runtime": "@vercel/node"
+    }
+  },
   "routes": [
     { "src": "/api/adapt", "dest": "/adapt.js" },
     { "src": "/", "dest": "/index.html" }
