@@ -1,3 +1,11 @@
 {
-  "version": 2
+  "version": 2,
+  "builds": [
+    { "src": "adapt.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/adapt", "dest": "/adapt.js" },
+    { "src": "/", "dest": "/index.html" }
+  ]
 }
